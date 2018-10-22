@@ -1,0 +1,54 @@
+#!/bin/sh
+
+toilet osu\!
+echo launcher by jvyden420
+echo
+
+export WINEPREFIX="$HOME/osu"
+export WINEARCH=win32
+export STAGING_AUDIO_DURATION=2000
+
+if [ $# -eq 0 ]
+	then
+		killall baloo_file
+		killall baloo_file_extractor
+		cd ~/osu/drive_c/osu
+		xinput map-to-output 26 HDMI-0
+		echo "If your game doesn't start, try running 'osu kill'."
+		wine osu\!.exe "$@"
+fi
+if [ $# -ne 0 ]
+then
+	if [ $1 = beatmap ]
+	then
+		echo "Moving all .osz files to songs folder..."
+		mv ~/Downloads/*.osz ~/osu/drive_c/osu/Songs/
+		echo $?
+		if [ $? -eq 0 ]
+		then
+			echo "Done."
+		else
+			echo "Nothing to move."
+		fi
+		exit
+	fi
+	if [ $1 = kill ]
+	then
+		echo "Killing osu!..."
+		wineserver -k "$@"
+		wineserver -w "$@"
+		echo "Done."
+		exit
+	fi
+	if [ $1 = run ]
+	then
+		echo Running $2...
+		wine $2 "$@"
+	fi
+fi
+echo
+toilet osu\!
+echo
+echo launcher by jvyden420
+echo
+echo see you next time
