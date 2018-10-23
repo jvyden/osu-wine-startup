@@ -10,16 +10,16 @@ export STAGING_AUDIO_DURATION=2000
 
 if [ $# -eq 0 ]
 	then
-		killall baloo_file
-		killall baloo_file_extractor
+		killall baloo_file           #Kill processes that are useless
+		killall baloo_file_extractor #and use up resources on my system.
 		cd ~/osu/drive_c/osu
-		xinput map-to-output 26 HDMI-0
+		xinput map-to-output 26 HDMI-0 # This line is specific to me. You can remove this if you'd like.
 		echo "If your game doesn't start, try running 'osu kill'."
 		wine osu\!.exe "$@"
 fi
-if [ $# -ne 0 ]
+if [ $# -ne 0 ] # OMG JVYDEN USE CASES SMH BAD PROGRAMMER
 then
-	if [ $1 = beatmap ]
+	if [ $1 = beatmap ] # If you have supporter, this is useless to you.
 	then
 		echo "Moving all .osz files to songs folder..."
 		mv ~/Downloads/*.osz ~/osu/drive_c/osu/Songs/
@@ -32,7 +32,7 @@ then
 		fi
 		exit
 	fi
-	if [ $1 = kill ]
+	if [ $1 = kill ] # Useful when your game is stuck.
 	then
 		echo "Killing osu!..."
 		wineserver -k "$@"
@@ -40,7 +40,7 @@ then
 		echo "Done."
 		exit
 	fi
-	if [ $1 = run ]
+	if [ $1 = run ] # Useful for running winecfg in osu's prefix.
 	then
 		echo Running $2...
 		wine $2 "$@"
