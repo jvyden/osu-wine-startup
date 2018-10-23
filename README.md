@@ -1,4 +1,6 @@
-# My launcher for running osu on wine. Pretty bad, but it works.
+# My launcher for running osu on wine. 
+
+#### (Pretty bad, but it works.)
 
 ## Requirements:
 Wine
