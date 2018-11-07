@@ -7,8 +7,6 @@ Wine
 
 osu!
 
-toilet
-
 big brain
 
 ~~will to live~~  (not present)
