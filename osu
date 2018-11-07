@@ -1,6 +1,10 @@
 #!/bin/sh
 
-toilet osu\!
+echo '                        m   
+  mmm    mmm   m   m    #   
+ #" "#  #   "  #   #    #   
+ #   #   """m  #   #    "   
+ "#m#"  "mmm"  "mm"#    # '
 echo launcher by jvyden420
 echo
 
@@ -13,7 +17,7 @@ if [ $# -eq 0 ]
 		killall baloo_file           #Kill processes that are useless
 		killall baloo_file_extractor #and use up resources on my system.
 		cd ~/osu/drive_c/osu
-		xinput map-to-output 26 HDMI-0 # This line is specific to me. You can remove this if you'd like.
+		xinput map-to-output 25 HDMI-0 # This line is specific to me. You can remove this if you'd like.
 		echo "If your game doesn't start, try running 'osu kill'."
 		wine osu\!.exe "$@"
 fi
@@ -47,7 +51,11 @@ then
 	fi
 fi
 echo
-toilet osu\!
+echo '                        m   
+  mmm    mmm   m   m    #   
+ #" "#  #   "  #   #    #   
+ #   #   """m  #   #    "   
+ "#m#"  "mmm"  "mm"#    # '
 echo
 echo launcher by jvyden420
 echo
