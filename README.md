@@ -1,6 +1,6 @@
 # My launcher for running osu on wine. 
 
-#### (Pretty bad, but it works.)
+(Pretty bad, but it works.)
 
 ## Requirements:
 Wine
@@ -12,10 +12,9 @@ big brain
 ~~will to live~~  (not present)
 
 ## Installing:
-#1. Make sure you have root.
 
-#2. Configure if necessary.
+#1. Make a new file called `~/.osu-config`. You can put commands here that run when the launcher is run.
 
-#3. Place in /usr/local/bin/
+#2. Place `osu` in `/usr/local/bin/`. You may need root depending on your system.
 
-#4. Done.
+#3. Done.
