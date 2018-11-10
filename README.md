@@ -9,8 +9,6 @@ osu!
 
 big brain
 
-~~will to live~~  (not present)
-
 ## Installing:
 
 You can find the guide to installing [here.](https://github.com/jvyden420/osu-wine-startup/wiki/1:-Installing-osu-wine-startup)
