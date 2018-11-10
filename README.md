@@ -13,8 +13,4 @@ big brain
 
 ## Installing:
 
-#1. Make a new file called `~/.osu-config`. You can put commands here that run when the launcher is run.
-
-#2. Place `osu` in `/usr/local/bin/`. You may need root depending on your system.
-
-#3. Done.
+You can find the guide to installing [here.] (https://github.com/jvyden420/osu-wine-startup/wiki/1:-Installing-osu-wine-startup)
