@@ -15,7 +15,7 @@ export STAGING_AUDIO_DURATION=2000
 if [ $# -eq 0 ]
 	then
 		cd ~/osu/drive_c/osu
-		sh ~/.osu-config
+		sh ~/.config/osu.sh
 		echo "If your game doesn't start, try running 'osu kill'."
 		wine osu\!.exe "$@"
 fi
