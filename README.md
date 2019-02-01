@@ -1,11 +1,11 @@
-# My launcher for running osu on wine. 
-
-(Pretty bad, but it works.)
+# osu! wine startup
 
 ## Requirements:
 Wine
 
 osu!
+
+A computer that can handle osu
 
 big brain
 
