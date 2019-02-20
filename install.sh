@@ -46,7 +46,10 @@ export WINEARCH=win32
 winetricks dotnet40
 winetricks corefonts
 winetricks gdiplus
-wget https://github.com/discordapp/discord-rpc/releases/download/v3.4.0/discord-rpc-win.zip
-unzip discord-rpc-win.zip
-cp discord-rpc/win32-dynamic/bin/discord-rpc.dll $OSUDIR/drive_c/osu/
+wget https://github.com/Marc3842h/rpc-wine/releases/download/1.0.0/rpc-wine.tar.gz
+tar -xzf rpc-wine.tar.gz
+rm rpc-wine.tar.gz
+cp -r bin* ../
+
+touch "$OSUDIR/drive_c/osu/discord-rpc.dll"
 echo "Finished."
