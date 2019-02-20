@@ -11,6 +11,7 @@ echo
 export WINEPREFIX="$HOME/osu"
 export WINEARCH=win32
 export STAGING_AUDIO_DURATION=2000
+export WINEDLLPATH="$WINEPREFIX/bin32:$WINEPREFIX/bin64"
 
 if [ $# -eq 0 ]
 	then
