@@ -2,6 +2,7 @@
 
 export OSUDIR="$HOME/osu"
 export INSTALLERNAME="osu!install.exe"
+export LANG=ja_JP.UTF-8
 read -p "Install osu-wine-startup? [Y/n] " choice
 case "$choice" in
 	y|Y ) echo "Installing...";;
@@ -43,8 +44,12 @@ mv $INSTALLERNAME "$OSUDIR/drive_c/osu/osu!.exe"
 
 export WINEPREFIX="$OSUDIR"
 export WINEARCH=win32
+echo "Installing dotnet 4.0..."
 winetricks dotnet40
+echo "Installing fonts..."
 winetricks corefonts
+winetricks cjkfonts
+echo "Installing GDI+..."
 winetricks gdiplus
 wget https://github.com/Marc3842h/rpc-wine/releases/download/1.0.0/rpc-wine.tar.gz
 tar -xzf rpc-wine.tar.gz
