@@ -18,7 +18,7 @@ if [[ $WINEOUT == *"no packages found"* ]]; then
 	sudo apt -y install wine-stable
 fi
 
-sudo apt install -y winetricks wine32 wine-stable unzip
+sudo apt install -y winetricks wine32 wine-stable unzip winbind
 
 mkdir -p "$OSUDIR/drive_c/osu"
 sudo cp osu /usr/local/bin/osu
